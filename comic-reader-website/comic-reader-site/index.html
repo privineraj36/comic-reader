@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171321">
+  <meta name="description" content="Read She and I — choose your preferred language and enjoy the comic.">
+  <title>She and I — Multilingual Comic</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="She and I home"><span class="brand-mark">S<span>&</span>I</span><span class="brand-name">STORY / COMICS</span></a>
+    <span class="top-note">ONE STORY · YOUR LANGUAGE</span>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> A STORY TO SHARE</p>
+        <h1>She <em>&</em> I<span class="period">.</span></h1>
+        <p class="intro">Every story feels closer in the language you love. Choose a version and start reading.</p>
+        <div class="language-heading"><span>SELECT YOUR LANGUAGE</span><span class="language-count">03 EDITIONS</span></div>
+        <div class="language-grid" id="languageChoices">
+          <button class="language-card" data-language="english" type="button">
+            <span class="language-icon">EN</span><span class="language-text"><strong>English</strong><small>Read in English</small></span><span class="card-arrow">↗</span>
+          </button>
+          <button class="language-card" data-language="tamil" type="button">
+            <span class="language-icon tamil-icon">அ</span><span class="language-text"><strong>தமிழ்</strong><small>தமிழில் படிக்க</small></span><span class="card-arrow">↗</span>
+          </button>
+          <button class="language-card" data-language="malay" type="button">
+            <span class="language-icon malay-icon">MS</span><span class="language-text"><strong>Bahasa Melayu</strong><small>Baca dalam Bahasa Melayu</small></span><span class="card-arrow">↗</span>
+          </button>
+        </div>
+        <p class="note">Choose a language above. The comic opens below in the built-in PDF reader.</p>
+      </div>
+      <aside class="hero-art" aria-label="Comic cover artwork">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="cover-card">
+          <div class="cover-top"><span>AN ORIGINAL COMIC</span><span>№ 001</span></div>
+          <div class="cover-illustration"><div class="sun"></div><div class="figure figure-one"></div><div class="figure figure-two"></div><div class="ground"></div><span class="spark spark-one">✳</span><span class="spark spark-two">✦</span></div>
+          <div class="cover-title">SHE<br><i>&</i> I<span>.</span></div>
+          <div class="cover-bottom"><span>A STORY IN THREE EDITIONS</span><span>READ · FEEL · REPEAT</span></div>
+        </div>
+        <span class="art-caption">TURN THE PAGE. ENTER THE STORY.</span>
+      </aside>
+    </section>
+
+    <section class="reader-section" id="reader" hidden>
+      <div class="reader-heading">
+        <div><p class="eyebrow"><span class="eyebrow-line"></span> YOUR READING SPACE</p><h2 id="readerTitle">English Edition</h2></div>
+        <button class="back-button" id="backButton" type="button">← All languages</button>
+      </div>
+      <div class="reader-toolbar"><span id="readerLabel">SHE & I · ENGLISH</span><div class="reader-actions"><a id="openPdf" class="tool-link" href="comics/english.pdf" target="_blank" rel="noopener">Open in new tab ↗</a><a id="downloadPdf" class="tool-link download-link" href="comics/english.pdf" download>Download PDF ↓</a></div></div>
+      <div class="pdf-frame-wrap"><iframe id="pdfFrame" title="Comic PDF reader" src="about:blank"></iframe></div>
+      <p class="reader-help">If the PDF does not appear in the preview, use “Open in new tab” to read it on your device.</p>
+    </section>
+  </main>
+
+  <footer><span>© <span id="year"></span> SHE & I COMICS</span><span>MADE FOR EVERY READER</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
